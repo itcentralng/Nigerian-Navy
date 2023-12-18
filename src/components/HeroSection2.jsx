@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HeroSection2 = () => {
-  // Define styles as an object
+  
   const heroSectionStyles = {
     color: '#fff',
     padding: '40px',

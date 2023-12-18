@@ -1,4 +1,4 @@
-// src/components/Navbar.js
+
 import React from 'react';
 import logo from '../assets/images/image1.png';
 

@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from 'react';
 import CmdExpand1 from './screens/CmdExpand1';
 import './App.css';

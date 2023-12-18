@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Card from '../components/Card';
-import { FaArrowRight } from 'react-icons/fa'; // Import the right arrow icon
+import { FaArrowRight } from 'react-icons/fa'; 
 
 const CmdExpand1 = () => {
   const mainContentStyles = {
@@ -60,13 +60,13 @@ const CmdExpand1 = () => {
                 padding: '10px',
                 background: 'transparent',
                 display: 'flex',
-                alignItems: 'center', // Align the arrow with the text
+                alignItems: 'center',
                 color: "#fff",
                 textAlign: "right"
               }}
             >
               Next
-              <FaArrowRight style={{ marginLeft: '5px' }} /> {/* Add the right arrow icon */}
+              <FaArrowRight style={{ marginLeft: '5px' }} />
             </button>
           </div>
         </div>

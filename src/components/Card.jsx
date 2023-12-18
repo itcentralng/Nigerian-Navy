@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInfo, FaUser, FaEnvelope, FaBuilding, FaPhone } from 'react-icons/fa';
+import { FaInfo, FaBullseye, FaEnvelope, FaBuilding, FaPhone } from 'react-icons/fa';
 
 const Card = ({ icon, label }) => {
   const cardStyles = {
@@ -20,13 +20,13 @@ const Card = ({ icon, label }) => {
     marginBottom: '5px',
   };
 
-  // Use the appropriate icon component based on the 'icon' prop
+
   const renderIcon = () => {
     switch (icon) {
       case 'info':
         return <FaInfo style={iconStyles} />;
-      case 'user':
-        return <FaUser style={iconStyles} />;
+      case 'bullseye':
+        return <FaBullseye style={iconStyles} />;
       case 'envelope':
         return <FaEnvelope style={iconStyles} />;
       case 'building':
