@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Card from '../components/Card';
 import { FaArrowRight } from 'react-icons/fa'; 
 
-const CmdExpand1 = () => {
+const cmdGallery = () => {
   const mainContentStyles = {
     padding: '20px',
     margin: '0 auto',
@@ -39,11 +39,11 @@ const CmdExpand1 = () => {
       <Navbar />
       <div style={mainContentStyles}>
         <div>
-          <Card icon="info" label="ABOUT" isFirstCard />
+          <Card icon="info" label="ABOUT" />
           <Card icon="bullseye" label="OBJECTIVES" />
           <Card icon="sitemap" label="DEPARTMENTS" />
           <Card icon="building" label="STRUCTURES" />
-          <Card icon="image" label="GALLERY" />
+          <Card icon="image" label="GALLERY" isFirstCard />
         </div>
         <div style={textContainerStyles}>
           <h2 style={{ fontSize: "45px"}}>Central Naval Command</h2>
@@ -72,4 +72,4 @@ const CmdExpand1 = () => {
   );
 };
 
-export default CmdExpand1;
+export default cmdGallery;

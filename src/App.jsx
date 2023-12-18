@@ -1,11 +1,11 @@
 import React from 'react';
-import CmdExpand1 from './screens/CmdExpand1';
+import Swiper from './components/Swiper';
 import './App.css';
 
 function App() {
   return (
     <div className="app">
-      <CmdExpand1 />
+      <Swiper />
     </div>
   );
 }

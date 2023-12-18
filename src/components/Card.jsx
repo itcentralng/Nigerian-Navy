@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaInfo, FaBullseye, FaEnvelope, FaBuilding, FaPhone } from 'react-icons/fa';
+import { FaInfo, FaBullseye, FaSitemap, FaBuilding, FaImage } from 'react-icons/fa';
 
-const Card = ({ icon, label }) => {
+const Card = ({ icon, label, isFirstCard }) => {
   const cardStyles = {
     display: 'flex',
     flexDirection: 'column',
@@ -11,15 +11,20 @@ const Card = ({ icon, label }) => {
     paddingBottom: '10px',
     paddingLeft: '20px',
     paddingRight: '20px',
-    border: '1px solid #ccc',
+    border: isFirstCard ? 'none' : '1px solid white', // No border for the first card
     borderRadius: '15px',
+    background: isFirstCard ? 'gold' : 'transparent', // Golden background for the first card
   };
 
   const iconStyles = {
     fontSize: '2em',
     marginBottom: '5px',
+    color: 'white', // White icon color
   };
 
+  const textStyles = {
+    color: 'white', // White text color
+  };
 
   const renderIcon = () => {
     switch (icon) {
@@ -27,12 +32,12 @@ const Card = ({ icon, label }) => {
         return <FaInfo style={iconStyles} />;
       case 'bullseye':
         return <FaBullseye style={iconStyles} />;
-      case 'envelope':
-        return <FaEnvelope style={iconStyles} />;
+      case 'sitemap':
+        return <FaSitemap style={iconStyles} />;
       case 'building':
         return <FaBuilding style={iconStyles} />;
-      case 'phone':
-        return <FaPhone style={iconStyles} />;
+      case 'image':
+        return <FaImage style={iconStyles} />;
       default:
         return null;
     }
@@ -41,7 +46,7 @@ const Card = ({ icon, label }) => {
   return (
     <div style={cardStyles}>
       {renderIcon()}
-      <p>{label}</p>
+      <p style={textStyles}>{label}</p>
     </div>
   );
 };
