@@ -10,7 +10,7 @@ body {
   height: 100vh;
   text-align: center;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/images/image1.png'); /* Adjust alpha (last value) for transparency */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/bg1.png'); /* Adjust alpha (last value) for transparency */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body {
   height: 100vh;
   text-align: center;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/images/image2.png'); /* Adjust alpha (last value) for transparency */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/bg1.png'); /* Adjust alpha (last value) for transparency */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@ body {
   height: 100vh;
   text-align: center;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/images/image3.png'); /* Adjust alpha (last value) for transparency */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/bg1.png'); /* Adjust alpha (last value) for transparency */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,7 +62,7 @@ nav {
 
 .logo {
   width: 50px;
-  height: 50px;
+  height: 70px;
 }
 
 .hero-section {
@@ -109,7 +109,7 @@ nav {
 .image-container img {
   width: 220px;
   height: 250px;
-  border: 3px solid gold;
+  /* border: 3px solid gold; */
   border-radius: 5px;
 }
 
@@ -121,4 +121,15 @@ nav {
   white-space: normal; /* Allow the text to wrap to the next line */
   font-family: 'Manrope-VariableFont_wght', sans-serif;
 
+}
+
+.command-text {
+  font-family: 'Manrope-VariableFont_wght', sans-serif;
+}
+
+.head-text {
+  font-size: 45px;
+  font-family: 'Manrope-VariableFont_wght', sans-serif;
+  white-space: normal;
+  margin: 0;
 }

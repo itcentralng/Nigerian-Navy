@@ -46,9 +46,9 @@ const CmdExpand1 = () => {
           <Card icon="image" label="GALLERY" />
         </div>
         <div style={textContainerStyles}>
-          <h2 style={{ fontSize: "45px"}}>Central Naval Command</h2>
-          <h2>Established: February 2012</h2>
-          <p>{commandText}</p>
+          <h2 className='head-text'>THE NIGERIAN NAVY</h2>
+          <h2 className='head-text'>CENTRAL COMMAND</h2>
+          <p className='command-text'>{commandText}</p>
           <div style={buttonContainerStyles}>
             <button
               style={{
