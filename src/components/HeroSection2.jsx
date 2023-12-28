@@ -14,7 +14,8 @@ const HeroSection2 = () => {
     fontSize: '2.5em',
     marginBottom: '20px',
     marginTop: '60px',
-    color: "gold"
+    color: "gold",
+    fontWeight: 100
   };
 
   const paragraphStyles = {

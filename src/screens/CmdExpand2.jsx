@@ -22,6 +22,15 @@ const CmdExpand2 = () => {
     textAlign: 'right',
   };
 
+  const headContainerStyles = {
+    color: 'white',
+    textAlign: 'left',
+    fontFamily: 'YourFontName',
+    fontWeight: 100,
+    fontSize: 45,
+    margin: 0,
+  };
+
   const commandText1 = `
   1 - Enhancement of more robust employment and deployment of vessels, personnel and material to effectively police and protect the numerous rigs, platforms, oil installations, creeks and adjoining rivers in the AOR of CNC.
 `;
@@ -58,8 +67,8 @@ const CmdExpand2 = () => {
           <Card icon="image" label="GALLERY" />
         </div>
         <div style={textContainerStyles}>
-          <h2 style={{ fontSize: "45px"}}>Benefits of the NIGERIAN NAVY CENTRAL COMMAND</h2>
-          <h2>Established: February 2012</h2>
+          <h2 style={headContainerStyles}>Benefits OF THE NIGERIAN NAVY CENTRAL COMMAND</h2>
+          {/* <h2 style={headContainerStyles}>Established: February 2012</h2> */}
           <p>{commandText1}</p>
           <p>{commandText2}</p>
           <p>{commandText3}</p>

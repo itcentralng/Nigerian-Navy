@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Card from '../components/Card';
 import { FaArrowRight } from 'react-icons/fa'; 
+import '../App.css';
 
 const CmdExpand1 = () => {
   const mainContentStyles = {
@@ -20,6 +21,15 @@ const CmdExpand1 = () => {
 
   const buttonContainerStyles = {
     textAlign: 'right',
+  };
+
+  const headContainerStyles = {
+    color: 'gold',
+    textAlign: 'left',
+    fontFamily: 'YourFontName',
+    fontWeight: 100,
+    fontSize: 70,
+    margin: 0,
   };
 
   const commandText = `
@@ -46,8 +56,8 @@ const CmdExpand1 = () => {
           <Card icon="image" label="GALLERY" />
         </div>
         <div style={textContainerStyles}>
-          <h2 className='head-text'>THE NIGERIAN NAVY</h2>
-          <h2 className='head-text'>CENTRAL COMMAND</h2>
+          <h2 style={headContainerStyles}>THE NIGERIAN NAVY</h2>
+          <h2 style={headContainerStyles}>CENTRAL COMMAND</h2>
           <p className='command-text'>{commandText}</p>
           <div style={buttonContainerStyles}>
             <button
